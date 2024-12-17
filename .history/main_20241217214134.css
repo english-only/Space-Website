@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -18,7 +19,7 @@ html {
   /* Ensure the body and html take full height */
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: 'Mon';
   font-weight: 400;
   color: white;
 }
@@ -74,7 +75,6 @@ body {
   font-size: 20px;
   width: 180px;
   border-radius: 800px;
-  font-family: Montserrat;
 }
 
 .nav-button:hover {
@@ -93,8 +93,8 @@ body {
 }
 
 .hero-text:hover {
-  text-shadow: 3px 4px 3px rgba(255, 255, 255, 0.7); /* White shadow */
-  transform: translateY(-10px); /* Raised effect */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* White shadow */
+  transform: translateY(-5px); /* Raised effect */
 }
 
 @keyframes fadeInOut {
@@ -135,9 +135,11 @@ body {
 .cards {
   font-size: 25px;
   color: white;
+  margin-left: 20px; /* Adds space to the left */
   box-sizing: border-box;
   position: relative;
   top: -450px; /* Moves the element upwards */
+  margin-left: -20px;
   text-align: center;
 }
 
@@ -169,7 +171,7 @@ body {
 
 .cards p {
   margin-top: 15px;
-  width: 800px; /* Adjust width to fit within card */
+  width: 600px; /* Adjust width to fit within card */
 }
 
 .cards p:hover {
@@ -230,7 +232,7 @@ body {
 
 .button-container a {
   display: block; /* Ensure buttons occupy full width of their grid cell */
-  width: 215px; /* Full width of the grid cell */
+  width: 200px; /* Full width of the grid cell */
   text-align: center;
   color: white;
   font-size: 20px;
@@ -241,13 +243,13 @@ body {
   height: 30px;
   transition: background-color 0.3s, color 0.3s;
   margin-bottom: 10px; /* Decrease the space between the buttons and the text below */
-  padding-top: 13px;
 }
 
 .button-container a:hover {
   background-color: white;
   color: black;
-  font-weight: 700;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .images {
@@ -261,23 +263,7 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   margin-top: -630px; /* Decrease the space between the images and the buttons above */
-  margin-left: -10px;
-}
-
-.black-hole-image {
-  width: 100%; /* Full width of the grid cell */
-  border: 2px solid white;
-  border-radius: 20px;
-  margin-top: -630px; /* Decrease the space between the images and the buttons above */
-  margin-left: -95px;
-}
-
-.supernova-image {
-  width: 100%; /* Full width of the grid cell */
-  border: 2px solid white;
-  border-radius: 20px;
-  margin-top: -630px; /* Decrease the space between the images and the buttons above */
-  margin-left: -95px;
+  margin-left: -100px;
 }
 
 .nebula-image {
@@ -286,64 +272,7 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   margin-top: -630px; /* Decrease the space between the images and the buttons above */
-  margin-left: -125px;
-}
-
-/* page 2 from below */
-.background-2 {
-  background-attachment: fixed;
-  background-image: url('thumb-1920-1346075.png');
-  background-size: contain;
-  background-position: 300px;
-  background-repeat: no-repeat;
-  position: fixed; /* Keep background fixed while scrolling */
-  height: 100vh;
-  width: 100%;
-  filter: brightness(40%);
-  z-index: -1; /* Place the background behind other content */
-}
-
-.page-2-hero {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  text-align: center;
-  padding: 0; /* Remove padding to minimize hover area */
-  display: inline-block; /* Restrict hover area to text content */
-  transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.page-2-hero:hover {
-  text-shadow: 3px 4px 3px rgba(255, 255, 255, 0.7); /* White shadow */
-  transform: translateY(-10px); /* Raised effect */
-}
-/* table */
-.table {
-  display: table;
-  width: 65%;
-  border-collapse: collapse;
-  margin-left: 330px;
-}
-
-.header-row {
-  display: table-row;
-}
-
-.header-cell {
-  display: table-cell;
-  background-color: #f0f0f0;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  border: 3px solid #000;
-  grid-column: 1 / -1; /* Spans all columns */
-  column-span: all;
-}
-
-.cell {
-  display: table-cell;
-  border: 1px solid #ffffff;
-  padding: 10px;
+  margin-left: -100px;
 }
 
 @keyframes fadeIn {

@@ -118,26 +118,19 @@ body {
 
 .row {
   display: flex;
-  gap: 650px; /* Space between the cards */
-  justify-content: center; /* Center the row */
-  align-items: flex-start; /* Align cards to the top */
+  gap: 50px; /* Reduced gap for better alignment */
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .black_hole {
-  margin-left: -100px; /* Move the Black Holes card to the left */
+  margin-left: 0; /* Reset left margin */
   width: 500px;
 }
 
-.black_hole a {
-  margin-left: 110px;
-}
-
 .cards {
-  font-size: 25px;
-  color: white;
-  box-sizing: border-box;
-  position: relative;
-  top: -450px; /* Moves the element upwards */
+  position: static; /* Remove top shifting */
+  margin: 0; /* Reset margins */
   text-align: center;
 }
 
@@ -169,7 +162,7 @@ body {
 
 .cards p {
   margin-top: 15px;
-  width: 800px; /* Adjust width to fit within card */
+  width: 600px; /* Adjust width to fit within card */
 }
 
 .cards p:hover {
@@ -230,7 +223,7 @@ body {
 
 .button-container a {
   display: block; /* Ensure buttons occupy full width of their grid cell */
-  width: 215px; /* Full width of the grid cell */
+  width: 200px; /* Full width of the grid cell */
   text-align: center;
   color: white;
   font-size: 20px;
@@ -241,13 +234,13 @@ body {
   height: 30px;
   transition: background-color 0.3s, color 0.3s;
   margin-bottom: 10px; /* Decrease the space between the buttons and the text below */
-  padding-top: 13px;
 }
 
 .button-container a:hover {
   background-color: white;
   color: black;
-  font-weight: 700;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .images {
@@ -338,6 +331,10 @@ body {
   border: 3px solid #000;
   grid-column: 1 / -1; /* Spans all columns */
   column-span: all;
+}
+
+.row {
+  display: table-row;
 }
 
 .cell {

@@ -230,7 +230,7 @@ body {
 
 .button-container a {
   display: block; /* Ensure buttons occupy full width of their grid cell */
-  width: 215px; /* Full width of the grid cell */
+  width: 200px; /* Full width of the grid cell */
   text-align: center;
   color: white;
   font-size: 20px;

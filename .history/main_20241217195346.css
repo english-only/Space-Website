@@ -167,10 +167,6 @@ body {
   padding: 0;
 }
 
-.cards p {
-  margin-top: 15px;
-  width: 800px; /* Adjust width to fit within card */
-}
 
 .cards p:hover {
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
@@ -230,7 +226,7 @@ body {
 
 .button-container a {
   display: block; /* Ensure buttons occupy full width of their grid cell */
-  width: 215px; /* Full width of the grid cell */
+  width: 200px; /* Full width of the grid cell */
   text-align: center;
   color: white;
   font-size: 20px;
@@ -241,13 +237,13 @@ body {
   height: 30px;
   transition: background-color 0.3s, color 0.3s;
   margin-bottom: 10px; /* Decrease the space between the buttons and the text below */
-  padding-top: 13px;
 }
 
 .button-container a:hover {
   background-color: white;
   color: black;
-  font-weight: 700;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .images {
@@ -338,6 +334,10 @@ body {
   border: 3px solid #000;
   grid-column: 1 / -1; /* Spans all columns */
   column-span: all;
+}
+
+.row {
+  display: table-row;
 }
 
 .cell {

@@ -108,37 +108,28 @@ body {
     opacity: 0.5;
   }
 }
-
 .card-wrapper {
   display: flex;
-  flex-direction: column; /* Stack cards vertically */
+  flex-direction: column;
   align-items: center; /* Center cards horizontally */
   margin-top: 50px; /* Adjusts space from the top */
 }
 
 .row {
   display: flex;
-  gap: 650px; /* Space between the cards */
-  justify-content: center; /* Center the row */
+  gap: 50px; /* Adjust the space between the cards */
+  justify-content: center; /* Align cards horizontally */
   align-items: flex-start; /* Align cards to the top */
-}
-
-.black_hole {
-  margin-left: -100px; /* Move the Black Holes card to the left */
-  width: 500px;
-}
-
-.black_hole a {
-  margin-left: 110px;
 }
 
 .cards {
   font-size: 25px;
   color: white;
-  box-sizing: border-box;
-  position: relative;
-  top: -450px; /* Moves the element upwards */
   text-align: center;
+  width: 500px; /* Fixed width for consistent card size */
+  box-sizing: border-box;
+  margin: 0; /* Reset margins to avoid unexpected gaps */
+  position: static; /* Remove 'relative' positioning */
 }
 
 .cards a {
@@ -146,13 +137,10 @@ body {
   text-decoration: none;
   border: white 2px solid;
   display: inline-block;
-  text-align: center;
-  box-sizing: border-box;
   padding: 6px 20px;
-  line-height: normal;
+  border-radius: 600px;
   transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
     background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  border-radius: 600px;
 }
 
 .cards a:hover {
@@ -162,14 +150,10 @@ body {
   color: black;
 }
 
-.cards a h3 {
-  margin: 0;
-  padding: 0;
-}
-
 .cards p {
   margin-top: 15px;
-  width: 800px; /* Adjust width to fit within card */
+  width: 100%; /* Allow text to wrap within the card */
+  text-align: center; /* Align text inside the card */
 }
 
 .cards p:hover {
@@ -230,7 +214,7 @@ body {
 
 .button-container a {
   display: block; /* Ensure buttons occupy full width of their grid cell */
-  width: 215px; /* Full width of the grid cell */
+  width: 200px; /* Full width of the grid cell */
   text-align: center;
   color: white;
   font-size: 20px;
@@ -241,13 +225,13 @@ body {
   height: 30px;
   transition: background-color 0.3s, color 0.3s;
   margin-bottom: 10px; /* Decrease the space between the buttons and the text below */
-  padding-top: 13px;
 }
 
 .button-container a:hover {
   background-color: white;
   color: black;
-  font-weight: 700;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .images {
@@ -338,6 +322,10 @@ body {
   border: 3px solid #000;
   grid-column: 1 / -1; /* Spans all columns */
   column-span: all;
+}
+
+.row {
+  display: table-row;
 }
 
 .cell {
