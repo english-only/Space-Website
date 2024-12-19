@@ -325,7 +325,7 @@ body {
   height: 100vh;
   width: 100%;
   z-index: -1; /* Place the background behind other content */
-  filter: blur(5px) brightness(45%);
+  filter: blur(4px) brightness(45%);
 }
 
 .page-2-hero {
