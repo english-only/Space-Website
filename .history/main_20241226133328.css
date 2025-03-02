@@ -1,3 +1,4 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @keyframes fadeIn {
   from {
@@ -25,7 +26,7 @@ html {
 
 body {
   /* Set a fallback background color */
-  background-color: #010104;
+  background-color: black;
 }
 
 .background {
@@ -129,11 +130,7 @@ body {
 }
 
 .black_hole a {
-  margin-right: -450px;
-}
-
-.black_hole p {
-  margin-left: 80px;
+  margin-right: -260px;
 }
 
 .cards {
@@ -380,9 +377,8 @@ h1 {
   margin-bottom: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  max-width: 600px;
+  max-width: 700px;
   margin-bottom: 150px;
-  height: 194px;
 }
 
 .black-hole-type:hover {
@@ -392,8 +388,6 @@ h1 {
 .content {
   align-items: baseline;
   gap: 20px;
-  font-weight: 500;
-  line-height: 22px;
 }
 
 .black-hole-type h2 {
@@ -404,13 +398,12 @@ h1 {
 }
 
 .u-idiot {
-  margin-left: 1350px;
-  min-width: 600px;
+  margin-left: 1250px;
+  min-width: 700px;
 }
 
 .intermediate {
-  margin-top: -765px;
-  padding: 20px;
+  margin-top: -728px;
 }
 
 .black-hole-container {

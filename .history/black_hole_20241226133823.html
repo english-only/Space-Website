@@ -87,7 +87,7 @@
       const background = document.querySelector('.background-2');
       let angle = 0;
       const radiusX = 800; // Horizontal radius
-      const radiusY = 160; // Vertical radius
+      const radiusY = 100; // Vertical radius
       let isAtTop = true;
 
       function moveBackground() {
@@ -102,7 +102,7 @@
           }px`; // Center vertically
 
           // Increment angle for next frame
-          angle += 0.008523; // Adjust this value to change speed
+          angle += 0.003; // Adjust this value to change speed
         }
 
         requestAnimationFrame(moveBackground);

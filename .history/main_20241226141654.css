@@ -25,7 +25,7 @@ html {
 
 body {
   /* Set a fallback background color */
-  background-color: #010104;
+  background-color: #;
 }
 
 .background {
@@ -129,11 +129,7 @@ body {
 }
 
 .black_hole a {
-  margin-right: -450px;
-}
-
-.black_hole p {
-  margin-left: 80px;
+  margin-right: -260px;
 }
 
 .cards {

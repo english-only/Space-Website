@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Welcome to Space</title>
@@ -87,7 +91,7 @@
       const background = document.querySelector('.background-2');
       let angle = 0;
       const radiusX = 800; // Horizontal radius
-      const radiusY = 160; // Vertical radius
+      const radiusY = 100; // Vertical radius
       let isAtTop = true;
 
       function moveBackground() {
@@ -102,7 +106,7 @@
           }px`; // Center vertically
 
           // Increment angle for next frame
-          angle += 0.008523; // Adjust this value to change speed
+          angle += 0.003; // Adjust this value to change speed
         }
 
         requestAnimationFrame(moveBackground);

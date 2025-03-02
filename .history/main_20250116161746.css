@@ -129,11 +129,7 @@ body {
 }
 
 .black_hole a {
-  margin-right: -450px;
-}
-
-.black_hole p {
-  margin-left: 80px;
+  margin-right: -260px;
 }
 
 .cards {
@@ -201,6 +197,10 @@ body {
   margin-right: 200px;
   max-width: 1750px;
   text-align: center; /* Align text to the center */
+}
+
+.black_hole p {
+  margin-left: 90px;
 }
 
 .videos {
