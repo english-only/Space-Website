@@ -8,8 +8,6 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 /* Fade-in class to be used on elements */
 .fade-in {
   opacity: 0; /* Start invisible */
@@ -366,16 +364,6 @@ body {
   color: white;
 }
 
-.stupid-text p {
-  font-size: 19px;
-}
-
-.stupid-text h1 {
-  font-size: 40px;
-  text-wrap: nowrap;
-  text-decoration: ;
-}
-
 .stupid-text:hover {
   cursor: auto;
 }
@@ -407,7 +395,7 @@ h1 {
   gap: 20px;
   font-weight: 500;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .black-hole-type h2 {

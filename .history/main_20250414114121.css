@@ -8,8 +8,6 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 /* Fade-in class to be used on elements */
 .fade-in {
   opacity: 0; /* Start invisible */
@@ -373,7 +371,7 @@ body {
 .stupid-text h1 {
   font-size: 40px;
   text-wrap: nowrap;
-  text-decoration: ;
+  text-decoration;;
 }
 
 .stupid-text:hover {
