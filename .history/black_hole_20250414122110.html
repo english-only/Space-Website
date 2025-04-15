@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Welcome to Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="background-2 fade-in"></div>
+    <div class="wrapper fade-in">
+      <nav class="navbar fade-in">
+        <a href="index.html"
+          ><button class="nav-button fade-in">Home</button></a
+        >
+        <a href="black_hole.html"
+          ><button class="nav-button fade-in">Black Holes</button></a
+        >
+        <a href="supernovas.html"
+          ><button class="nav-button fade-in">Supernovas</button></a
+        >
+        <a href="nebulas.html"
+          ><button class="nav-button fade-in">Nebulas</button></a
+        >
+      </nav>
+      <div class="page-2-hero fade-in">
+        <h2>Black Holes:<br />Light Bends, Time Slows</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stupid-text">
+        <h1>Types of Black Holes: The Cosmic Giants</h1>
+        <p>
+          Black holes come in various sizes and types, each with its own unique
+          characteristics. Let's explore them:
+        </p>
+      </div>
+
+      <div class="black-hole-container">
+        <div class="black-hole-type">
+          <h2 class="">Stellar-Mass Black Holes</h2>
+          <div class="content">
+            <p>
+              These incredible objects form when massive stars reach the end of
+              their life cycles. After exhausting their nuclear fuel, they
+              collapse under their own gravity, creating a black hole that can
+              be up to 20 times the mass of our Sun!
+            </p>
+          </div>
+        </div>
+        <div class="black-hole-type">
+          <h2>Supermassive Black Holes</h2>
+          <div class="content">
+            <p>
+              Found at the heart of galaxies, including our very own Milky Way,
+              supermassive black holes can weigh millions or even billions of
+              times more than the Sun. Their immense gravity influences the
+              orbits of stars and gas in their vicinity, shaping entire
+              galaxies.
+            </p>
+          </div>
+        </div>
+        <div class="black-hole-type u-idiot intermediate">
+          <h2>Intermediate Black Holes</h2>
+          <div class="content">
+            <p>
+              These elusive giants sit between stellar and supermassive black
+              holes in terms of size. Scientists are still trying to uncover
+              their origins and how they fit into the cosmic puzzle.
+            </p>
+          </div>
+        </div>
+        <div class="black-hole-type u-idiot miniature">
+          <h2>Miniature Black Holes</h2>
+          <div class="content">
+            <p>
+              Theoretical in nature, these tiny black holes might have formed
+              during the Big Bang. While we haven't found any yet, they spark
+              exciting discussions about the early universe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stupid-text">
+      <h1>The Intriguing Structure of a Black Hole</h1>
+    </div>
+    <script>
+      const background = document.querySelector('.background-2');
+      let angle = 0;
+      const radiusX = 800; // Horizontal radius
+      const radiusY = 160; // Vertical radius
+      let isAtTop = true;
+
+      function moveBackground() {
+        if (isAtTop) {
+          // Calculate new position based on angle
+          const x = Math.cos(angle) * radiusX; // X position based on cosine
+          const y = Math.sin(angle) * radiusY; // Y position based on sine
+
+          // Apply the new position (starting from right side)
+          background.style.backgroundPosition = `calc(100% + ${x}px) ${
+            50 + y
+          }px`; // Center vertically
+
+          // Increment angle for next frame
+          angle += 0.0035; // Adjust this value to change speed
+        }
+
+        requestAnimationFrame(moveBackground);
+      }
+
+      // Start the animation
+      moveBackground();
+    </script>
+  </body>
+</html>
